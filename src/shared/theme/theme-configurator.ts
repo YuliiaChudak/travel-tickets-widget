@@ -1,5 +1,6 @@
 const colors = {
     primaryDark: '#004B94',
+    primaryWhite: '#FFFFFF',
 }
 
 const fonts = {

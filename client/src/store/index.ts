@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import slotWidgetsReducer from '../features/slot-widgets/slot-widgets-reducer';
-import faresReducer from '../features/fares/faresReducer';
+import faresReducer from '../features/fares/fares-reducer';
 
 export const store = configureStore({
   reducer: {

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { Fare } from '../../shared/types/Fare';
-import { getFareById } from './faresApi';
-import { getFareDataById } from './faresSelectors';
+import { getFareById } from './fares-api';
+import { getFareDataById } from './fares-selectors';
 import { RootState } from '../../store';
 
 const REDUCER_NAME = 'fares';

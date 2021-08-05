@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 
 import { Box } from '../../../../shared/components/box/Box.styles';
 import { SlotWidget as SlotWidgetType } from '../../../../shared/types/SlotWidget';
-import { loadFareById } from '../../../../features/fares/faresReducer';
+import { loadFareById } from '../../../../features/fares/fares-reducer';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   getFareDataById,
   getFareErrorById,
   isFareFetchingById,
-} from '../../../../features/fares/faresSelectors';
+} from '../../../../features/fares/fares-selectors';
 import { RootState } from '../../../../store';
 import { Details, Information, Name, DetailsError } from './SlotWidget.styles';
 import { H4, H3 } from '../../../../shared/components/heading/Heading.styles';

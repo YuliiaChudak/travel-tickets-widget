@@ -6,7 +6,7 @@ import {
   getSlotWidgets,
   getSlotWidgetsError,
   isFetchingSlotWidgets,
-} from '../../features/slot-widgets/slotWidgetsSelectors';
+} from '../../features/slot-widgets/slot-widgets-selectors';
 import { Grid } from '../../shared/components/grid/Grid.styles';
 import { Placeholder } from '../../shared/components/placeholder/Placeholder.styles';
 import SlotWidget from './components/widget/SlotWidget';

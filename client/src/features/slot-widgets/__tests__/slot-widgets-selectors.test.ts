@@ -5,7 +5,7 @@ import {
 } from '../slot-widgets-selectors';
 import { initialState, SlotWidgetsState } from '../slot-widgets-reducer';
 import { RootState } from '../../../store';
-import slotWidgets from '../__fixtures__/slot-widgets-get-success.json';
+import slotWidgetsFixture from '../__fixtures__/slot-widgets-get-success.json';
 
 const getMockedStoreValue = (data: Partial<SlotWidgetsState> = {}): RootState =>
   ({
@@ -24,9 +24,9 @@ describe('Slot widgets selectors', () => {
     it('returns store slot widgets', () => {
       expect(
         getSlotWidgets(
-          getMockedStoreValue({ slots: slotWidgets['slot-widgets'] })
+          getMockedStoreValue({ slots: slotWidgetsFixture['slot-widgets'] })
         )
-      ).toEqual(slotWidgets['slot-widgets']);
+      ).toEqual(slotWidgetsFixture['slot-widgets']);
     });
   });
 

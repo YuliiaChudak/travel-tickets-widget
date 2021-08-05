@@ -29,7 +29,13 @@ const SlotWidgetScene = () => {
           {Array(3)
             .fill(null)
             .map((_, id) => (
-              <Placeholder key={id} width="auto" height="300px" br="10px" />
+              <Placeholder
+                key={id}
+                data-testid="slot-widget-loader"
+                width="auto"
+                height="300px"
+                br="10px"
+              />
             ))}
         </Grid>
       </Container>

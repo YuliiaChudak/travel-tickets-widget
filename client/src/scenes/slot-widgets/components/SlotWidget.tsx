@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 
-import { Box } from '../../../../shared/components/box/Box.styles';
-import { SlotWidget as SlotWidgetType } from '../../../../shared/types/SlotWidget';
-import { loadFareById } from '../../../../features/fares/fares-reducer';
+import { Box } from '../../../shared/components/box/Box.styles';
+import { SlotWidget as SlotWidgetType } from '../../../shared/types/SlotWidget';
+import { loadFareById } from '../../../features/fares/fares-thunks';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   getFareDataById,
   getFareErrorById,
   isFareFetchingById,
-} from '../../../../features/fares/fares-selectors';
-import { RootState } from '../../../../store';
+} from '../../../features/fares/fares-selectors';
+import { RootState } from '../../../store';
 import { Details, Information, Name, DetailsError } from './SlotWidget.styles';
-import { H4, H3 } from '../../../../shared/components/heading/Heading.styles';
-import Price from './components/Price';
-import TravelRoutes from './components/TravelRoutes';
+import { H4, H3 } from '../../../shared/components/heading/Heading.styles';
+import Price from './Price';
+import TravelRoutes from './TravelRoutes';
 
 type Props = {
   widget: SlotWidgetType;

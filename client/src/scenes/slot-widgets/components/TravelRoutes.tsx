@@ -1,8 +1,8 @@
 import React from 'react';
-import { Fare } from '../../../../../shared/types/Fare';
-import { AirplaneIcon } from '../../../../../shared/components/icons';
-import { Placeholder } from '../../../../../shared/components/placeholder/Placeholder.styles';
-import { convertDateToViewFormat } from '../../../../../shared/services/date';
+import { Fare } from '../../../shared/types/Fare';
+import { AirplaneIcon } from '../../../shared/components/icons';
+import { Placeholder } from '../../../shared/components/placeholder/Placeholder.styles';
+import { convertDateToViewFormat } from '../../../shared/services/date';
 import {
   Container,
   Date,

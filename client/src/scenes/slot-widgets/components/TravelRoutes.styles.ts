@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor } from '../../../../../shared/theme/helpers';
+import { getColor } from '../../../shared/theme/helpers';
 
 type AirplaineIconWrapperProps = {
   rotate: string;

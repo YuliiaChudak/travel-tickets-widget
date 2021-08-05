@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor } from '../../../../shared/theme/helpers';
+import { getColor } from '../../../shared/theme/helpers';
 
 export const Information = styled.div<{ bg: string }>`
   min-height: 200px;

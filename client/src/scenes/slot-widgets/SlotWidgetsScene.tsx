@@ -9,7 +9,7 @@ import {
 } from '../../features/slot-widgets/slot-widgets-selectors';
 import { Grid } from '../../shared/components/grid/Grid.styles';
 import { Placeholder } from '../../shared/components/placeholder/Placeholder.styles';
-import SlotWidget from './components/widget/SlotWidget';
+import SlotWidget from './components/SlotWidget';
 import { Container, Error } from './SlotWidgetsScene.styles';
 
 const SlotWidgetScene = () => {

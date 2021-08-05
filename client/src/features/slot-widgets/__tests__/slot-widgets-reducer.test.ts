@@ -40,7 +40,7 @@ describe('Slot widgets reducer', () => {
     expect(state.error).toEqual(action.error.message);
   });
 
-  it(`handles ${loadAllSlotWidgets.rejected} action with custom error`, () => {
+  it(`handles ${loadAllSlotWidgets.rejected} action with default error`, () => {
     const action = {
       type: loadAllSlotWidgets.rejected,
     };

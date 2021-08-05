@@ -1,0 +1,22 @@
+{
+  "slot-widgets": [
+    {
+      "bigTitle": "Spain-1",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "https://s1.travix.com/eu/europe-spain-mallorca-cala-gat-beach-small.jpg",
+      "fareId": "1"
+    },
+    {
+      "bigTitle": "Spain-2",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "https://s1.travix.com/eu/europe-spain-mallorca-cala-gat-beach-small.jpg",
+      "fareId": "2"
+    },
+    {
+      "bigTitle": "Spain-3",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "https://s1.travix.com/eu/europe-spain-mallorca-cala-gat-beach-small.jpg",
+      "fareId": "3"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import { SlotWidget } from '../../shared/types/SlotWidget';
-import { getAllSlotWidgets } from './slotWidgetsApi';
+import { getAllSlotWidgets } from './slot-widgets-api';
 
 export const FEATURE_NAME = 'slotWidgets';
 

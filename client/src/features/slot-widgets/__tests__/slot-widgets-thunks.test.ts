@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { AxiosResponse } from 'axios';
-import * as apiHandlers from '../slotWidgetsApi';
+import * as apiHandlers from '../slot-widgets-api';
 import slotWidgets from '../__fixtures__/slot-widgets-get-success.json';
 import reducer from '../slot-widgets-reducer'
 

@@ -1,5 +1,6 @@
 import reducer, { initialState } from '../slot-widgets-reducer';
 import { loadAllSlotWidgets } from '../slot-widgets-thunks';
+import slotWidgets from '../__fixtures__/slot-widgets-get-success.json';
 
 describe('Slot widgets reducer', () => {
   it(`handles ${loadAllSlotWidgets.pending} action`, () => {
@@ -20,14 +21,7 @@ describe('Slot widgets reducer', () => {
   it(`handles ${loadAllSlotWidgets.fulfilled} action`, () => {
     const action = {
       type: loadAllSlotWidgets.fulfilled,
-      payload: [
-        {
-          bigTitle: 'Title',
-          smallTitle: 'Small title',
-          image: 'https://url.com',
-          fareId: '1',
-        },
-      ],
+      payload: slotWidgets,
     };
     const state = reducer({ ...initialState, isFetching: true }, action);
 

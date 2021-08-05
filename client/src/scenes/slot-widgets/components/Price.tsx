@@ -1,10 +1,7 @@
 import React from 'react';
 import { Fare } from '../../../shared/types/Fare';
 import { Placeholder } from '../../../shared/components/placeholder/Placeholder.styles';
-import {
-  H3,
-  H4,
-} from '../../../shared/components/heading/Heading.styles';
+import { H3, H4 } from '../../../shared/components/heading/Heading.styles';
 import { Currency, Mark, Container } from './Price.styles';
 
 type Props = {

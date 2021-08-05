@@ -7,7 +7,8 @@
     "install": "cd server && npm install & cd client && npm install",
     "start": "npm run start:server & npm run start:client",
     "start:server": "cd server && npm start",
-    "start:client": "cd client && npm start"
+    "start:client": "cd client && npm start",
+    "ci:client:test": "cd client && npm test"
   },
   "keywords": [
     "Travix",

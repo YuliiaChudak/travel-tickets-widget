@@ -1,4 +1,4 @@
-import reducer, { initialState } from '../slotWidgetsReducer';
+import reducer, { initialState } from '../slot-widgets-reducer';
 import { loadAllSlotWidgets } from '../slot-widgets-thunks';
 
 describe('Slot widgets reducer', () => {

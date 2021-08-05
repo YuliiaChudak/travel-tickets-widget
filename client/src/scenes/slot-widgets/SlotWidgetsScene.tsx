@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { loadAllSlotWidgets } from '../../features/slot-widgets/slotWidgetsReducer';
+import { loadAllSlotWidgets } from '../../features/slot-widgets/slot-widgets-thunks';
 import {
   getSlotWidgets,
   getSlotWidgetsError,

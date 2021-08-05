@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import slotWidgetsReducer from '../features/slot-widgets/slotWidgetsReducer';
+import slotWidgetsReducer from '../features/slot-widgets/slot-widgets-reducer';
 import faresReducer from '../features/fares/faresReducer';
 
 export const store = configureStore({

@@ -36,8 +36,8 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
 
   const departureDate = convertDateToViewFormat(fare.departureDate);
   const returnDate = convertDateToViewFormat(fare.returnDate);
-  const isDepartureAirport = Boolean(fare.departure.airportName)
-  const isDestinationAirport = Boolean(fare.destination.airportName)
+  const isDepartureAirport = Boolean(fare.departure.airportName);
+  const isDestinationAirport = Boolean(fare.destination.airportName);
 
   return (
     <Container>
@@ -46,10 +46,12 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
           <AirplaneIcon />
         </AirplainDeparture>
         <CityName>
-            {fare.departure.cityName}
-            {isDepartureAirport && <>,</>}
+          {fare.departure.cityName}
+          {isDepartureAirport && <>,</>}
         </CityName>
-        { fare.departure.airportName && <AirportName>{fare.departure.airportName}</AirportName> }
+        {fare.departure.airportName && (
+          <AirportName>{fare.departure.airportName}</AirportName>
+        )}
         <Date>
           &bull; {departureDate.dayNumber} {departureDate.monthName}.
         </Date>
@@ -59,15 +61,18 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
           <AirplaneIcon />
         </AirplainDestination>
         <CityName>
-            {fare.destination.cityName}
-            {isDestinationAirport && <>,</>}
+          {fare.destination.cityName}
+          {isDestinationAirport && <>,</>}
         </CityName>
         <AirportName>{fare.destination.airportName}</AirportName>
         <Date>
           &bull; {returnDate.monthName} {returnDate.dayNumber}.
         </Date>
       </Direction>
-      <FoundAt>{fare.time}<span>&bull; {fare.airlineName}</span></FoundAt>
+      <FoundAt>
+        {fare.time}
+        <span>&bull; {fare.airlineName}</span>
+      </FoundAt>
     </Container>
   );
 };

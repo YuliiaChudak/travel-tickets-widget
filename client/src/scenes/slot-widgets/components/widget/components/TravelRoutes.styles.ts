@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { getColor } from '../../../../../shared/theme/helpers';
 
 type AirplaineIconWrapperProps = {
-    rotate: string;
+  rotate: string;
 };
 
 export const Container = styled.div`
@@ -12,10 +12,10 @@ export const Container = styled.div`
   font-size: 16px;
 
   :hover svg {
-    transition: linear .5s;
+    transition: linear 0.5s;
     fill: ${getColor('primaryActive')};
   }
-    
+
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     font-size: 14px;
   }
@@ -29,7 +29,7 @@ export const FoundAt = styled.span`
   line-height: 16px;
   white-space: nowrap;
   color: ${getColor('secondaryTextLight')};
-  
+
   span {
     margin-left: 5px;
   }
@@ -64,7 +64,7 @@ const AirplaineIconWrapper = styled.div<AirplaineIconWrapperProps>`
   width: 16px;
   height: 16px;
   transform: ${({ rotate }) => rotate};
-  
+
   > svg {
     fill: ${getColor('primaryBg')};
     width: 16px;

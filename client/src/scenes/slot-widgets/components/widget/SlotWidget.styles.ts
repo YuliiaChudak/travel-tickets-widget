@@ -9,7 +9,12 @@ export const Information = styled.div<{ bg: string }>`
   display: flex;
   justify-content: space-between;
   background-position: center;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.35) 100%), url('${({ bg }) => bg}');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.35) 100%
+    ),
+    url('${({ bg }) => bg}');
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #333333;
@@ -31,7 +36,7 @@ export const Name = styled.div`
   align-items: flex-start;
   flex-flow: column;
   justify-content: flex-end;
-  
+
   > h4,
   h3 {
     width: 100%;
@@ -53,7 +58,7 @@ export const DetailsError = styled.div`
   padding: 4px;
   line-height: 16px;
   color: ${getColor('secondaryText')};
-  
+
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     font-size: 14px;
   }

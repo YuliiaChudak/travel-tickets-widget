@@ -24,7 +24,12 @@ export const Placeholder = styled.div<PlaceholderProps>`
   animation-name: placeHolderShimmer;
   animation-timing-function: linear;
   background: #f6f7f8;
-  background: linear-gradient(to right, ${getColor('primaryGrey')} 8%, ${getColor('secondaryGrey')} 18%, ${getColor('primaryGrey')} 33%);
+  background: linear-gradient(
+    to right,
+    ${getColor('primaryGrey')} 8%,
+    ${getColor('secondaryGrey')} 18%,
+    ${getColor('primaryGrey')} 33%
+  );
   background-size: 800px 104px;
   height: ${({ height }) => height};
   width: ${({ width }) => width};

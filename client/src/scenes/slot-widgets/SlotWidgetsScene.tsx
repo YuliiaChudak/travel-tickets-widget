@@ -29,7 +29,7 @@ const SlotWidgetScene = () => {
           {Array(3)
             .fill(null)
             .map((_, id) => (
-                <Placeholder key={id} width="auto" height="300px" br="10px"/>
+              <Placeholder key={id} width="auto" height="300px" br="10px" />
             ))}
         </Grid>
       </Container>
@@ -37,14 +37,18 @@ const SlotWidgetScene = () => {
   }
 
   if (error) {
-    return <Container><Error>Error {error} occurred. We'll get back to you soon!</Error></Container>;
+    return (
+      <Container>
+        <Error>Error {error} occurred. We'll get back to you soon!</Error>
+      </Container>
+    );
   }
 
   return (
     <Container>
       <Grid>
         {slotWidgets.map((widget, id) => (
-            <SlotWidget key={id} widget={widget} />
+          <SlotWidget key={id} widget={widget} />
         ))}
       </Grid>
     </Container>

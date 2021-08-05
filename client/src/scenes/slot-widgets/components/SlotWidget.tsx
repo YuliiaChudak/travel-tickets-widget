@@ -31,8 +31,6 @@ const SlotWidget = ({ widget }: Props) => {
     getFareErrorById(widget.fareId)(state as RootState)
   );
 
-  console.log(fare, isFetchingFare, fareFetchingError);
-
   useEffect(() => {
     dispatch(loadFareById(widget.fareId));
   }, [widget.fareId]);

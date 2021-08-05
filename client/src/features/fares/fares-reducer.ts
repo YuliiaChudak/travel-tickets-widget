@@ -12,7 +12,7 @@ export interface FaresState {
   data: Record<string, FareDataSlice>;
 }
 
-const initialState: FaresState = {
+export const initialState: FaresState = {
   data: {},
 };
 
@@ -38,7 +38,7 @@ const { reducer } = createSlice({
       state.data[action.meta.arg] = {
         isFetching: false,
         error:
-          action.error.message ||
+          action.error?.message ||
           `Failed to load fare with ${action.meta.arg} id`,
       };
     });

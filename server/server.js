@@ -49,6 +49,6 @@ app.get('/fares/:id', (req, res) => {
 });
 
 
-app.listen(9001, () => {
+app.listen(3000, () => {
   process.stdout.write('The server is available on http://localhost:9001/\n');
 });

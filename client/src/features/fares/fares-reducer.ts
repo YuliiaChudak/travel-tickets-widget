@@ -1,10 +1,6 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { Fare } from '../../shared/types/Fare';
-import { getFareById } from './fares-api';
-import { getFareDataById } from './fares-selectors';
-import { RootState } from '../../store';
-
-const REDUCER_NAME = 'fares';
+import { loadFareById, FEATURE_NAME } from './fares-thunks';
 
 type FareDataSlice = {
   isFetching: boolean;
@@ -20,24 +16,8 @@ const initialState: FaresState = {
   data: {},
 };
 
-export const loadFareById = createAsyncThunk(
-  `${REDUCER_NAME}/loadFareById`,
-  async (fareId: string, thunkAPI) => {
-    const isStoredFare = getFareDataById(fareId)(
-      thunkAPI.getState() as RootState
-    );
-
-    if (isStoredFare) {
-      return;
-    }
-
-    const response = await getFareById(fareId);
-    return response.data.fare;
-  }
-);
-
 const { reducer } = createSlice({
-  name: REDUCER_NAME,
+  name: FEATURE_NAME,
   initialState,
   reducers: {},
   extraReducers: (builder) => {

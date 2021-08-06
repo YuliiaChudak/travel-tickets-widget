@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: 'http://localhost:9001',
-  // baseURL: 'https://widget-slots.herokuapp.com/',
+  baseURL: process.env.REACT_APP_API_SERVICE,
   timeout: 10000,
 });

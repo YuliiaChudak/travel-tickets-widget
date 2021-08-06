@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { getColor, getFont, getViewPort } from '../../../shared/theme/helpers';
 
-type AirplaineIconWrapperProps = {
-  rotate: string;
-};
-
 export const Container = styled.div`
   position: relative;
   padding-left: 25px;
@@ -58,12 +54,11 @@ export const Date = styled.span`
   margin-left: 5px;
 `;
 
-const AirplaineIconWrapper = styled.div<AirplaineIconWrapperProps>`
+const AirplaneIconWrapper = styled.div`
   position: absolute;
   left: 0;
   width: 16px;
   height: 16px;
-  transform: ${({ rotate }) => rotate};
 
   > svg {
     fill: ${getColor('primaryBg')};
@@ -72,5 +67,10 @@ const AirplaineIconWrapper = styled.div<AirplaineIconWrapperProps>`
   }
 `;
 
-export const AirplainDeparture = styled(AirplaineIconWrapper)``;
-export const AirplainDestination = styled(AirplaineIconWrapper)``;
+export const AirplaneDeparture = styled(AirplaneIconWrapper)`
+  transform: rotate(135deg);
+`;
+
+export const AirplaneDestination = styled(AirplaneIconWrapper)`
+  transform: rotate(-45deg);
+`;

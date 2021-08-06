@@ -10,8 +10,8 @@ import {
   CityName,
   Direction,
   FoundAt,
-  AirplainDeparture,
-  AirplainDestination,
+  AirplaneDeparture,
+  AirplaneDestination,
 } from './TravelRoutes.styles';
 
 type Props = {
@@ -42,9 +42,9 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
   return (
     <Container>
       <Direction>
-        <AirplainDeparture rotate="rotate(135deg)">
+        <AirplaneDeparture>
           <AirplaneIcon />
-        </AirplainDeparture>
+        </AirplaneDeparture>
         <CityName>
           {fare.departure.cityName}
           {isDepartureAirport && <>,</>}
@@ -57,9 +57,9 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
         </Date>
       </Direction>
       <Direction>
-        <AirplainDestination rotate="rotate(-45deg)">
+        <AirplaneDestination>
           <AirplaneIcon />
-        </AirplainDestination>
+        </AirplaneDestination>
         <CityName>
           {fare.destination.cityName}
           {isDestinationAirport && <>,</>}

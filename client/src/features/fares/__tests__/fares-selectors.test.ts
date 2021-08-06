@@ -10,7 +10,7 @@ import faresFixture from '../__fixtures__/fare-get-success.json';
 const getMockedStoreValue = (data: FaresState['data'] = {}): RootState =>
   ({
     fares: {
-      data
+      data,
     },
   } as RootState);
 
@@ -23,12 +23,16 @@ describe('Fares selectors', () => {
     });
 
     it('returns store fares', () => {
-      expect(getFareDataById(fareId)(getMockedStoreValue({
-        [fareId]: {
-          isFetching: false,
-          fare: faresFixture
-        }
-      }))).toEqual(faresFixture);
+      expect(
+        getFareDataById(fareId)(
+          getMockedStoreValue({
+            [fareId]: {
+              isFetching: false,
+              fare: faresFixture,
+            },
+          })
+        )
+      ).toEqual(faresFixture);
     });
   });
 
@@ -42,22 +46,30 @@ describe('Fares selectors', () => {
     it('returns error message', () => {
       const error = 'Test';
 
-      expect(getFareErrorById(fareId)(getMockedStoreValue( {
-        [fareId]: {
-          isFetching: false,
-          error,
-        }
-      }))).toBeTruthy();
+      expect(
+        getFareErrorById(fareId)(
+          getMockedStoreValue({
+            [fareId]: {
+              isFetching: false,
+              error,
+            },
+          })
+        )
+      ).toBeTruthy();
     });
   });
 
   describe('isFetchingSlotWidgets', () => {
     it('returns appropriate fare fetching value', () => {
-      expect(isFareFetchingById(fareId)(getMockedStoreValue({
-        [fareId]: {
-          isFetching: true,
-        }
-      }))).toBeTruthy();
+      expect(
+        isFareFetchingById(fareId)(
+          getMockedStoreValue({
+            [fareId]: {
+              isFetching: true,
+            },
+          })
+        )
+      ).toBeTruthy();
     });
 
     it('returns default fare fetching value', () => {

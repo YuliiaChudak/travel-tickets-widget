@@ -27,6 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage --watchAll=false",
+    "test:e2e": "cypress open",
     "eject": "react-scripts eject",
     "prettier:fix": "prettier --write --list-different '**/*.{js,ts,tsx,css,md}'",
     "prettier:check": "prettier --check 'src/**/*.{js,ts,tsx}'"
@@ -50,6 +51,8 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.0",
+    "cypress": "^8.2.0",
     "prettier": "^2.3.2"
   }
 }

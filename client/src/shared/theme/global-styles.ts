@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { getFont } from './helpers';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -17,6 +18,6 @@ export const GlobalStyle = createGlobalStyle`
     }
       
     html {
-       font-family: ${({ theme }) => theme.fonts.sansSerif};
+       font-family: ${getFont('sansSerif')};
     }
 `;

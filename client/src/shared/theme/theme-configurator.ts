@@ -13,8 +13,8 @@ const colors = {
 
 const fonts = {
   sansSerif: 'sans-serif',
-  primary: 'Roboto',
-  secondary: 'Khand',
+  roboto: 'Roboto',
+  khand: 'Khand, sans-serif',
 };
 
 export const sizeViewPort = {

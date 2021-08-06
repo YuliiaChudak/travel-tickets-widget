@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor } from '../../../shared/theme/helpers';
+import { getColor, getFont } from '../../../shared/theme/helpers';
 
 export const Container = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const Container = styled.div`
 export const Currency = styled.span`
   color: ${getColor('primaryWhite')};
   text-align: end;
-  font-family: Khand, sans-serif;
+  font-family: ${getFont('khand')};
   font-weight: 500;
   font-size: 21px;
   display: inline-block;

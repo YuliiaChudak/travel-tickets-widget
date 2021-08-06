@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { getColor } from '../../theme/helpers';
+import { getColor, getFont } from '../../theme/helpers';
 
 export const H3 = styled.h3`
-  font-family: Khand, sans-serif;
+  font-family: ${getFont('khand')};
   font-weight: 700;
   font-size: 37px;
   line-height: 40px;
@@ -18,7 +18,7 @@ export const H3 = styled.h3`
 `;
 
 export const H4 = styled.h4`
-  font-family: Khand, sans-serif;
+  font-family: ${getFont('khand')};
   font-weight: 500;
   font-size: 21px;
   margin: 0;

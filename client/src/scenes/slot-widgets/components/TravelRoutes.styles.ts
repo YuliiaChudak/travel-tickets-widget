@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor } from '../../../shared/theme/helpers';
+import { getColor, getFont } from '../../../shared/theme/helpers';
 
 type AirplaineIconWrapperProps = {
   rotate: string;
@@ -53,7 +53,7 @@ export const Date = styled.span`
   line-height: 16px;
   white-space: nowrap;
   color: ${getColor('secondaryText')};
-  font-family: Roboto, sans-serif;
+  font-family: ${getFont('roboto')};
   font-weight: 400;
   margin-left: 5px;
 `;

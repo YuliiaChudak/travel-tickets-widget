@@ -17,25 +17,15 @@ const fonts = {
   khand: 'Khand, sans-serif',
 };
 
-export const sizeViewPort = {
-  xsMin: '320px',
-  xsMax: '767px',
-  smMin: '768px',
-  smMax: '999px',
-  lg: '1200px',
-};
-
-export const deviceViewPort = {
-  xs: `(min-width: ${sizeViewPort.xsMin}) and (max-width ${sizeViewPort.xsMax})`,
-  sm: `(min-width: ${sizeViewPort.smMin}) and (max-width ${sizeViewPort.smMax})`,
-  lg: `(min-width: ${sizeViewPort.lg})`,
+export const deviceViewPorts = {
+  xs: '@media only screen and (min-width: 320px) and (max-width: 767px)',
+  sm: '@media only screen and (min-width: 768px) and (max-width: 999px)',
 };
 
 export const theme = {
   colors,
   fonts,
-  sizeViewPort,
-  deviceViewPort,
+  deviceViewPorts,
 };
 
 export type Theme = typeof theme;

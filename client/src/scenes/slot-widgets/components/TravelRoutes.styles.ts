@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor, getFont } from '../../../shared/theme/helpers';
+import { getColor, getFont, getViewPort } from '../../../shared/theme/helpers';
 
 type AirplaineIconWrapperProps = {
   rotate: string;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     fill: ${getColor('primaryActive')};
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 14px;
   }
 `;

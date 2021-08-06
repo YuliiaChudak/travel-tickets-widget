@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getViewPort } from '../../theme/helpers';
 
 export const Grid = styled.div`
   display: grid;
@@ -10,11 +11,11 @@ export const Grid = styled.div`
   margin: 0 auto;
   padding: 0 24px;
 
-  @media only screen and (min-width: 768px) and (max-width: 999px) {
+  ${getViewPort('sm')} {
     grid-template-columns: repeat(2, 2fr);
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 12px;
     padding: 0 12px;

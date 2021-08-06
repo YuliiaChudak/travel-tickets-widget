@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor, getFont } from '../../../shared/theme/helpers';
+import { getColor, getFont, getViewPort } from '../../../shared/theme/helpers';
 
 export const Container = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ export const Currency = styled.span`
   display: inline-block;
   margin-right: 2px;
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 18px;
   }
 `;
@@ -41,7 +41,7 @@ export const Mark = styled.span`
   top: -2px;
   right: -10px;
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 18px;
   }
 `;

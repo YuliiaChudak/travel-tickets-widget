@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor } from '../../../shared/theme/helpers';
+import { getColor, getViewPort } from '../../../shared/theme/helpers';
 
 export const Information = styled.div<{ bg: string }>`
   min-height: 200px;
@@ -59,7 +59,7 @@ export const DetailsError = styled.div`
   line-height: 16px;
   color: ${getColor('secondaryText')};
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 14px;
   }
 `;

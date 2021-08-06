@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColor, getFont } from '../../theme/helpers';
+import { getColor, getFont, getViewPort } from '../../theme/helpers';
 
 export const H3 = styled.h3`
   font-family: ${getFont('khand')};
@@ -12,7 +12,7 @@ export const H3 = styled.h3`
   overflow: hidden;
   text-overflow: ellipsis;
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 28px;
   }
 `;
@@ -27,7 +27,7 @@ export const H4 = styled.h4`
   overflow: hidden;
   text-overflow: ellipsis;
 
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  ${getViewPort('xs')} {
     font-size: 18px;
   }
 `;

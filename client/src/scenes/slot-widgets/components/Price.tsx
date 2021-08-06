@@ -12,7 +12,7 @@ type Props = {
 const Price = ({ fare, isFetching }: Props) => {
   if (isFetching) {
     return (
-      <Container>
+      <Container data-testid="price-loader">
         <Placeholder width="60px" height="40px" />
       </Container>
     );

@@ -22,7 +22,7 @@ type Props = {
 const TravelRoutes = ({ fare, isFetching }: Props) => {
   if (isFetching) {
     return (
-      <Container>
+      <Container data-testid="routes-loader">
         <Placeholder width="80px" height="18px" mb="10px" />
         <Placeholder width="110px" height="10px" mb="10px" />
         <Placeholder width="90px" height="10px" />
@@ -52,7 +52,7 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
         {fare.departure.airportName && (
           <AirportName>{fare.departure.airportName}</AirportName>
         )}
-        <Date>
+        <Date data-testid="departure-date">
           &bull; {departureDate.dayNumber} {departureDate.monthName}.
         </Date>
       </Direction>
@@ -65,7 +65,7 @@ const TravelRoutes = ({ fare, isFetching }: Props) => {
           {isDestinationAirport && <>,</>}
         </CityName>
         <AirportName>{fare.destination.airportName}</AirportName>
-        <Date>
+        <Date data-testid="return-date">
           &bull; {returnDate.monthName} {returnDate.dayNumber}.
         </Date>
       </Direction>

@@ -15,7 +15,7 @@ import { H4, H3 } from '../../../shared/components/heading/Heading.styles';
 import Price from './Price';
 import TravelRoutes from './TravelRoutes';
 
-type Props = {
+export type Props = {
   widget: SlotWidgetType;
 };
 

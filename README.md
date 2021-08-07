@@ -2,6 +2,10 @@
 
 Widget slots application based on technical [assignment](https://github.com/Travix-International/fe-tech-test/tree/master/assignment-02).
 
+## Deployment
+
+Application is deployed at [heroku](https://www.heroku.com/) and available at [https://travix-widget-slot-client.herokuapp.com/](https://travix-widget-slot-client.herokuapp.com/).
+
 ## Steps to run:
 
 run `git clone <repo>` \
@@ -68,7 +72,3 @@ Express.js
 
 CI/CD based on github [workflows](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow) and integration with [heroku](https://www.heroku.com/).\
 Runs set up described at `.github/workflows/main.yaml`.
-
-## Deployment
-
-Application is deployed at [heroku](https://www.heroku.com/) and available at [https://travix-widget-slot-client.herokuapp.com/]([heroku](https://www.heroku.com/))

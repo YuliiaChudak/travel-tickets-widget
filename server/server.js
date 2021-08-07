@@ -3,7 +3,7 @@
 const app = require('express')();
 const slotWidgets = require('./slot-widgets.json');
 const fares = require('./fares.json');
-
+const port = process.env.PORT || 8080;
 /**
  * GET /slot-widgets
  *
@@ -49,6 +49,6 @@ app.get('/fares/:id', (req, res) => {
 });
 
 
-app.listen(9001, () => {
-  process.stdout.write('The server is available on http://localhost:9001/\n');
+app.listen(port, () => {
+  process.stdout.write(`The server is available on http://localhost:${port}/\n`);
 });

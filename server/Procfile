@@ -1,1 +1,2 @@
-web: npm start
+api: npm start
+web: npx serve -l 9001

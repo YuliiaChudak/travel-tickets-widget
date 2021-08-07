@@ -2,7 +2,6 @@
   "name": "slot-widget-app",
   "version": "1.0.0",
   "description": "responsive slot widget app",
-  "main": "server.js",
   "scripts": {
     "install": "cd server && npm install & cd client && npm install",
     "start": "npm run start:server & npm run start:client",

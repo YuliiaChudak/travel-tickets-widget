@@ -1,10 +1,10 @@
-# Travix widget slots application
+# Travel tickets widget
 
 Widget slots application based on technical [assignment](https://github.com/Travix-International/fe-tech-test/tree/master/assignment-02).
 
 ## Deployment
 
-Application is deployed at [heroku](https://www.heroku.com/) and available at [https://travix-widget-slot-client.herokuapp.com/](https://travix-widget-slot-client.herokuapp.com/).
+Application is deployed at [heroku](https://www.heroku.com/) and available at [here](https://travix-widget-slot-client.herokuapp.com/).
 
 ## Steps to run:
 

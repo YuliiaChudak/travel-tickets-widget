@@ -10,7 +10,14 @@ import {
   isFareFetchingById,
 } from '../../../features/fares/fares-selectors';
 import { RootState } from '../../../store';
-import { Details, Information, Name, DetailsError } from './SlotWidget.styles';
+import {
+  Details,
+  Information,
+  Name,
+  DetailsError,
+  InformationImg,
+  InformationHeader,
+} from './SlotWidget.styles';
 import { H4, H3 } from '../../../shared/components/heading/Heading.styles';
 import Price from './Price';
 import TravelRoutes from './TravelRoutes';
@@ -37,12 +44,17 @@ const SlotWidget = ({ widget }: Props) => {
 
   return (
     <Box>
-      <Information bg={widget.image}>
-        <Name>
-          <H4>{widget.smallTitle}</H4>
-          <H3>{widget.bigTitle}</H3>
-        </Name>
-        <Price fare={fare} isFetching={isFetchingFare} />
+      <Information>
+        <InformationImg>
+          <img alt={widget.bigTitle} src={widget.image} />
+        </InformationImg>
+        <InformationHeader>
+          <Name>
+            <H4>{widget.smallTitle}</H4>
+            <H3>{widget.bigTitle}</H3>
+          </Name>
+          <Price fare={fare} isFetching={isFetchingFare} />
+        </InformationHeader>
       </Information>
       <Details>
         <TravelRoutes fare={fare} isFetching={isFetchingFare} />

@@ -8,9 +8,6 @@ export const H3 = styled.h3`
   line-height: 40px;
   color: ${getColor('primaryWhite')};
   margin: 5px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   ${getViewPort('xs')} {
     font-size: 28px;
@@ -23,9 +20,6 @@ export const H4 = styled.h4`
   font-size: 21px;
   margin: 0;
   color: ${getColor('primaryWhite')};
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   ${getViewPort('xs')} {
     font-size: 18px;

@@ -3,7 +3,7 @@ import { getColor, getFont, getViewPort } from '../../../shared/theme/helpers';
 
 export const Container = styled.div`
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   border-bottom: solid 6px ${getColor('primaryYellow')};

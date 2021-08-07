@@ -1,40 +1,71 @@
 import styled from 'styled-components';
 import { getColor, getViewPort } from '../../../shared/theme/helpers';
 
-export const Information = styled.div<{ bg: string }>`
+export const Information = styled.div`
+  position: relative;
+
+  :hover {
+    img {
+      transform: translateX(-50%) scale(1.5);
+      transition: transform .3s ease-out;
+    }
+    cursor: pointer;
+`;
+
+export const InformationHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 20px 15px;
+  height: 100%;
+`;
+
+export const InformationImg = styled.div`
   min-height: 200px;
   width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  background-position: center;
-  background-image: linear-gradient(
+  padding: 0 0 75%;
+  height: 100%;
+
+  ::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 50%,
       rgba(0, 0, 0, 0.35) 100%
-    ),
-    url('${({ bg }) => bg}');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: #333333;
-  transition: background-size 250ms ease-in-out;
-  padding: 15px;
-
-  :hover {
-    background-size: 120%;
-    cursor: pointer;
+    );
+    transition: background-size 250ms ease-in-out;
   }
 
-  :focus {
-    background-size: 120%;
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-out;
   }
 `;
 
 export const Name = styled.div`
   display: flex;
   align-items: flex-start;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: flex-end;
 
   > h4,

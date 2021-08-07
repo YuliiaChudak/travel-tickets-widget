@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+## Preconditions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Run server from the server's directory: 
+run `cd ./server` \
+run `npm start` \
+check that it's running at [http://localhost:9001](http://localhost:9001)
+
+## Steps to run:
+
+run `npm start`
 
 ## Available Scripts
 
@@ -14,11 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -28,6 +30,20 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run test:coverage`
+
+Launches the test runner in the interactive watch mode and checks coverage.\
+Interactive report with coverage is accessible at `client/coverage/lcov-report/index.html` after test run complete.
+
+### `npm run test:e2e`
+
+Launches the [cypress](https://www.cypress.io/) test runner in the browser emulator.\
 
 ### `npm run eject`
 
@@ -39,8 +55,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run prettier:fix`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Fixes the all codes issues regarding `.prettierrc.json`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm run prettier:check`
+
+Checks the all codes issues and is used in CI.
+
+### `npm run storybook`
+
+Starts [Storybook](https://storybook.js.org/) locally and output the address.
+
+### `npm run build-storybook`
+
+Builds [Storybook](https://storybook.js.org/) as a static web application.

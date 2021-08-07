@@ -8,14 +8,15 @@
     "start:server": "cd server && npm start",
     "start:client": "cd client && npm start",
     "ci:client:test": "cd client && npm test",
-    "ci:client:prettier": "cd client && npm test"
+    "ci:client:prettier": "cd client && npm run prettier:check"
   },
   "keywords": [
     "Travix",
     "Widget slot",
     "React",
     "TypeScript",
-    "Express"
+    "Express",
+    "Storybook"
   ],
   "author": "Yuliia Chudak",
   "license": "ISC",

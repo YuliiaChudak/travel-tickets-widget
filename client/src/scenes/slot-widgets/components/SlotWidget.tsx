@@ -40,7 +40,7 @@ const SlotWidget = ({ widget }: Props) => {
 
   useEffect(() => {
     dispatch(loadFareById(widget.fareId));
-  }, [widget.fareId]);
+  }, [widget.fareId, dispatch]);
 
   return (
     <Box>

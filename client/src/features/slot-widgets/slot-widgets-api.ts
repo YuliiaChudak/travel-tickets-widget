@@ -1,5 +1,3 @@
-import axios, { AxiosResponse } from 'axios';
-
 import { api } from '../../shared/services/api';
 import { SlotWidget } from '../../shared/types/SlotWidget';
 

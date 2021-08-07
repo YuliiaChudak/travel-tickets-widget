@@ -20,7 +20,7 @@ const SlotWidgetScene = () => {
 
   useEffect(() => {
     dispatch(loadAllSlotWidgets());
-  }, []);
+  }, [dispatch]);
 
   if (isFetching) {
     return (
